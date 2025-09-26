@@ -1,3 +1,4 @@
+"use client"
 // utils/debugRender.js
 import { useEffect } from "react";
 

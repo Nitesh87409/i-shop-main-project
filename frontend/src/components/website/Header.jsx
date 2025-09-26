@@ -11,11 +11,9 @@ import { RiLogoutBoxLine } from "react-icons/ri";
 import { FaUserCircle } from "react-icons/fa";
 import { logout, lstouser } from "@/redux/slices/UserSlice";
 import { emptyCart, lsToCart } from "@/redux/slices/CartSlice";
-import { debugRender } from "@/app/utils/debugRender";
 
 
 const Header = () => {
-  debugRender("Header");
   const user = useSelector((store) => store.user);
   const cart = useSelector((store) => store.cart);
   const dispatch = useDispatch();

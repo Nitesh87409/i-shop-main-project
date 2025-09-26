@@ -7,17 +7,10 @@ import { AiOutlineLogout } from 'react-icons/ai';
 import { useDispatch, useSelector } from 'react-redux';
 import { adminlogout } from '@/redux/slices/AdminSlice';
 import { useRouter } from 'next/navigation';
-import { debugRender ,useRenderLogger  } from "../utils/debugRender"; // path adjust karna padega
-
 
 
 const Header = () => {
-    // 1️⃣ Server + Client render track karne ke liye
-  debugRender("Header");
 
-  // 2️⃣ Client hydration track karne ke liye
-  useRenderLogger("Header");
-  
     const router = useRouter()
     const admin = useSelector((store) => store.admin);
     const dispatch = useDispatch();
