@@ -94,7 +94,7 @@ export default function Receipt() {
             <span>Quantity</span>
             <span>Price</span>
           </div>
-          {Array.isArray(order?.products) && order.products.map((product, index) => (
+          {Array.isArray(order?.products) && order.products?.map((product, index) => (
             <div key={index} className="p-3 border-b border-gray-200 flex justify-between text-gray-600">
               <span>{product.name || "Unknown Product"}</span>
               <span>{product.quantity}</span>

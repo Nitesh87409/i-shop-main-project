@@ -301,7 +301,7 @@ useEffect(() => {
               <p className="text-center text-lg text-gray-500">No orders found.</p>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2  gap-6">
-                {orders.map((order) => {
+                {orders?.map((order) => {
                   const date = new Date(order.createdAt).getDate();
                   const month = new Date(order.createdAt).getMonth() + 1;
                   const year = new Date(order.createdAt).getFullYear();

@@ -187,7 +187,7 @@ const Cart = () => {
               </table>
               {/* Mobile View */}
               <div className="sm:hidden">
-                {cart.item.map((item, index) => {
+                {cart.item?.map((item, index) => {
                   const product = products.find((p) => p._id == item.product_id);
                   const color = product.color.find((c) => c._id == item.color_id);
                   return (

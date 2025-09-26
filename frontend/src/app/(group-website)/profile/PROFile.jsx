@@ -187,7 +187,7 @@ export default function ProfilePage() {
       {/* Tabs */}
       <div className="mt-10">
         <ul className="flex flex-wrap justify-center space-x-4">
-          {tabs.map((tab) => (
+          {tabs?.map((tab) => (
             <li
               key={tab}
               className={`cursor-pointer bg-white font-semibold px-6 py-2 rounded-md flex items-center space-x-2 transition ${activeTab === tab ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-600"}`}
@@ -349,7 +349,7 @@ export default function ProfilePage() {
               <p className="text-center text-lg text-gray-500">No orders found.</p>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {orders.map((order) => {
+                {orders?.map((order) => {
                   const date = new Date(order.createdAt).getDate();
                   const month = new Date(order.createdAt).getMonth() + 1;
                   const year = new Date(order.createdAt).getFullYear();

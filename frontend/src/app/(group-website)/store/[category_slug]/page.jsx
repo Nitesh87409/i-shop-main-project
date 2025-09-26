@@ -49,7 +49,7 @@ export default async function CategoryProduct({ params, searchParams }) {
                     {
                         products.length > 0
                             ?
-                            products.map(
+                            products?.map(
                                 (prod) => {
                                     return <ProductCard key={prod._id} {...prod}/>
                                 }
