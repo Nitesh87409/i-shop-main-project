@@ -53,7 +53,7 @@ const CategoryPage = async () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {categories.map(
+                                {categories?.map(
                                     (category,index)=>{
                                         return(
                                             <tr key={category._id}>

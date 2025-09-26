@@ -46,7 +46,7 @@ const CategoryPage = async () => {
                             </thead>
                             <tbody>
                                 {categories.length > 0 ? (
-                                    categories.map((category, index) => (
+                                    categories?.map((category, index) => (
                                         <tr key={category._id}>
                                             <td>{index + 1}</td>
                                             <td>{category.name}</td>
