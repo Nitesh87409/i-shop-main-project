@@ -68,7 +68,7 @@ const TrashProductPage = async () => {
 
                                 
                                 {
-                                    products.map(
+                                    products?.map(
                                         (product, index) => {
                                             return (
                                                 <tr key={product._id}>

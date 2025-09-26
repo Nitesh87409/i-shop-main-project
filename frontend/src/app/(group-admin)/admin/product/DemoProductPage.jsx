@@ -48,7 +48,7 @@ export default async function Product() {
           </thead>
           <tbody>
             {
-              Products.map((product, index) => {
+              Products?.map((product, index) => {
                 return (
                   <tr key={index} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                     <th

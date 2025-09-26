@@ -81,7 +81,7 @@ const OrdersPage = async () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {orders.map(
+                                {orders?.map(
                                     (order, index) => {
                                         return (
                                             <tr key={order._id}>

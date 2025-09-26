@@ -56,7 +56,7 @@ const ColorPage = async () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {colors.map(
+                                {colors?.map(
                                     (color,index)=>{
                                         return(
                                             <tr key={color._id}>

@@ -63,7 +63,7 @@ const ProductPage = async () => {
                             </thead>
                             <tbody>
 
-                                {products.map(
+                                {products?.map(
                                     (product, index) => {
                                         return (
                                             <tr key={product._id}>

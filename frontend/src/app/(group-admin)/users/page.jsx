@@ -58,7 +58,7 @@ const UserPage = async () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {Users.map(
+                                {Users?.map(
                                     (user,index)=>{
                                         return(
                                             <tr key={user._id}>

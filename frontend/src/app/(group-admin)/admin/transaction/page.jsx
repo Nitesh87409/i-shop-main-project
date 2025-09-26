@@ -246,7 +246,7 @@ const TransactionPage = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {transactions.map(
+                                {transactions?.map(
                                     (transaction, index) => {
                                         return (
                                             <tr key={transaction._id}>
